@@ -456,6 +456,52 @@ footer {
     color: #8b949e;
 }
 
+/* --- Added Resume Action Interactive System Base Layout Rules --- */
+.resume-buttons {
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.res-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.75rem 1.6rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.main-res {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    border: 1px solid var(--accent-color);
+}
+
+.main-res:hover {
+    background-color: transparent;
+    color: var(--accent-color);
+    box-shadow: 0 0 15px rgba(88, 166, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.sub-res {
+    background-color: transparent;
+    color: var(--text-bright);
+    border: 1px solid var(--border-color);
+}
+
+.sub-res:hover {
+    border-color: var(--accent-color);
+    background: rgba(88, 166, 255, 0.05);
+    color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
 /* --- Responsive Adjustments --- */
 @media (max-width: 900px) {
     .hero-container {
@@ -465,6 +511,9 @@ footer {
     }
     .objective {
         text-align: center;
+    }
+    .resume-buttons {
+        justify-content: center;
     }
     .social-links {
         justify-content: center;
